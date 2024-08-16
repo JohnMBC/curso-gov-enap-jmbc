@@ -55,11 +55,49 @@ print(saudacao.split())
 
 """
 We could also iterate over the string by index.
+Consider the following example that iterates over the string by index, so printing every element in the string. 
+"""
+nome = "Johnny Michael Borges Carvalho"
+for i in range(0, len(nome),  1 ):
+    print(str(i) + " indice da letra: " + nome[i])
+
+"""
+We could also iterate over the string by index.
 
 Consider the following example that iterates over the string by index,
 starting at index 0 and ending at the last element, with the counter increments by 2, 
 so ONLY printing every other element in the string. 
 """
+frase = "J-e-s-u-s C-r-i-s-t-o r-e-i-n-a !"
+for i in range(0, len(frase), 2):
+   print(str(i)+ " É o indice da letra: "+ frase[i])
+
+# Note: without updating the variable in the while loop,
+# this will be an INFINITE loop!!
+count = 0
+while(count < 100):
+  print(count)
+# IMPORTANT!!! Updating the counter!
+  count += 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  
             
