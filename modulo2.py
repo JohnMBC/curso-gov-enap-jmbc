@@ -68,17 +68,41 @@ Consider the following example that iterates over the string by index,
 starting at index 0 and ending at the last element, with the counter increments by 2, 
 so ONLY printing every other element in the string. 
 """
-frase = "J-e-s-u-s C-r-i-s-t-o r-e-i-n-a !"
+frase = "J-e-s-u-s-C-r-i-s-t-o-r-e-i-n-a"
 for i in range(0, len(frase), 2):
    print(str(i)+ " É o indice da letra: "+ frase[i])
 
 # Note: without updating the variable in the while loop,
 # this will be an INFINITE loop!!
 count = 0
-while(count < 100):
+while(count < 10):
   print(count)
 # IMPORTANT!!! Updating the counter!
   count += 1
+
+"""Considere um programa que ecoe o input do usuário, exceto pelo "end"
+   O programa roda infinitamente, exceto quando o usuário insere "end" para terminá-lo.
+"""
+ 
+while True:
+      user = input("Enter somenthing to be repeated: ")
+      if user == "end" or "cls" or "end":
+         print("Terminate the program!!!") 
+         break
+      print(user)
+
+       
+      
+       
+      
+    
+
+
+
+
+
+
+
 
 
 
