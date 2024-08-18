@@ -86,7 +86,7 @@ while(count < 10):
  
 while True:
       user = input("Enter somenthing to be repeated: ")
-      if user == "end" or "cls" or "end":
+      if user == "end":
          print("Terminate the program!!!") 
          break
       print(user)
