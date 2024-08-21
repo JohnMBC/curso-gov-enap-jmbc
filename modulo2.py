@@ -91,7 +91,43 @@ while True:
          break
       print(user)
 
-       
+"""Sem usar a palavra-chave "break",
+esta é outra implementação do mesmo programa 
+de cima usando uma variável"""
+
+end = False 
+while end == False:
+   user = input("Enter something to be repeated: ")
+   if user == "end":
+      print ("Program Ended!!!")
+      end = True
+   else:
+      print(user)
+
+"""Vamos considerar um loop que conta de 1-20, 
+mas ignora todos os números que são múltiplos de 5. 
+Neste caso, NÃO poderíamos usar a palavra-chave "break",
+porque isso encerrará o loop. 
+Queremos "continuar" o loop, exceto por alguns números. 
+Vamos implementar isto tanto com um loop "while"
+quanto com um loop "for". 
+"""
+for num in range(1, 21):
+   if num % 5 == 0:#numeros multiplos de 5;
+    print("multiplo")
+    continue #ignorando os multiplos
+   print (num)
+
+contador = 1
+while count + 1  <= 20:
+   if count % 5 == 0:
+      print ("ignore")
+      count += 1
+      continue
+   print(count)
+   count += 1
+
+
       
        
       
