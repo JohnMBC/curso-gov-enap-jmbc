@@ -8,8 +8,11 @@ it is implemented by default unless another lower bound is specified.
 Also by default, if there does NOT exists a third parameter for range(), 
 then i increments by 1. 
 """
-for i in range(10):
-    print(i)
+def main():
+    for i in range(10):
+        print(i)
+if __name__ == "__main__": 
+ main()
 
 """
 This examples specifies a lower bound that differs from the default value of 0.
@@ -23,9 +26,12 @@ The order of the parameter is ALWAYS:
 In this example, x starts at the value of 2 and stops at 9 inclusively, or 10 exclusive, 
 with x increments by 1 with each iteration.
 """
- 
-for x in range(2, 10):
-   print(x)
+def main():
+    for x in range(2, 10):
+      print(x)
+if __name__== "__main__":#'name' variável especial que representa o modulo atual
+   #Quando executado diretamente 'name' é  definido como 'main'
+   main() 
 
 """
 The third parameter in range() defines the number of steps to increment the counter.
@@ -77,7 +83,7 @@ for i in range(0, len(frase), 2):
 count = 0
 while(count < 10):
   print(count)
-# IMPORTANT!!! Updating the counter!
+#IMPORTANT!!! Updating the counter!
   count += 1
 
 """Considere um programa que ecoe o input do usuário, exceto pelo "end"
@@ -90,6 +96,7 @@ while True:
          print("Terminate the program!!!") 
          break
       print(user)
+      
 
 """Sem usar a palavra-chave "break",
 esta é outra implementação do mesmo programa 
@@ -112,36 +119,37 @@ Queremos "continuar" o loop, exceto por alguns números.
 Vamos implementar isto tanto com um loop "while"
 quanto com um loop "for". 
 """
-for num in range(1, 21):
-   if num % 5 == 0:#numeros multiplos de 5;
-    print("multiplo")
-    continue #ignorando os multiplos
-   print (num)
+def main():
+    for i in range(1, 20): 
+       if (i % 5 == 0):
+        print("ignore")
+        continue
+print(i)
+if __name__ == "__main__":
+    main()
 
-contador = 1
+count = 1
 while count + 1  <= 20:
    if count % 5 == 0:
-      print ("ignore")
-      count += 1
-      continue
+    print ("ignore")
+    count += 1
+    continue
    print(count)
    count += 1
 
+def main(): #Fuction
+    user = input("Digite uma palavra: ")#Simples input para armazenar o valor na variavel 'user'
+    palavra_atual = user.lower().replace("", " ")#convert para letras minusculas 'user.lower()'
+    #'user.replace' substitui os espaços em branco por um unico espaço("", " ").
+   #resumo: texto fica minusculo e são removidos os espaços extras(limpar antes de processar)
 
-      
-       
-      
-    
+    if palavra_atual == palavra_atual[::-1]:# compara se a palavra original é igual a sua versão invertida
+        print(user + " é um palíndromo!")
+    else:
+        print(user + " não é um palíndromo")
 
-
-
-
-
-
-
-
-
-
+if __name__ == "__main__":
+    main()
 
 
 
@@ -159,5 +167,20 @@ while count + 1  <= 20:
 
 
 
- 
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
